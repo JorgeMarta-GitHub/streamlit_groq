@@ -16,6 +16,8 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
 
+st.session_state.update(st.session_state)
+
 AI_TITLE = "MIL-STD-105E"
 
 st.set_page_config(page_title=AI_TITLE, layout="wide", initial_sidebar_state="collapsed")
