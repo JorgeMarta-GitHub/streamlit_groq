@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import logging
+from pathlib import Path
 from typing import Generator
 from groq import Groq
 from langchain_groq import ChatGroq
@@ -32,7 +33,7 @@ llm = ChatGroq(temperature=0, groq_api_key=st.secrets["GROQ_API_KEY"], model_nam
 
 def setup_db():
     with st.spinner('Preparing Vector Database ...'):
-        filename = './data/mil-std-105e.txt'
+        filename = Path(__file__).parent / './data/mil-std-105e.txt'
         loader = TextLoader(filename)
         documents = loader.load()
 
