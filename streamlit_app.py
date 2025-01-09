@@ -17,6 +17,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 import faiss
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
+from streamlit_server_state import server_state, server_state_lock
 
 st.session_state.update(st.session_state)
 
@@ -50,12 +51,17 @@ def setup_db():
         db = FAISS.from_documents(documents=chunks, embedding=embeddings, docstore=InMemoryDocstore())
         return db
 
-if 'db' not in st.session_state:
-    logger.info("Setup Vector Database")
-    st.session_state.db = setup_db()
+#if 'db' not in st.session_state:
+#    logger.info("Setup Vector Database")
+#    st.session_state.db = setup_db()
+
+with server_state_lock["db"]:
+    if "db" not in server_state:
+        logger.info("Setup Vector Database")
+        server_state.db = setup_db()
 
 def setup_rag_chain():
-    retriever = st.session_state.db.as_retriever(search_type = "similarity", search_kwargs = {"k": 3})
+    retriever = server_state.db.as_retriever(search_type = "similarity", search_kwargs = {"k": 3})
 
     template = """You are a professional expert. Answer the question based only on the following context:{context}
     To answer the question:
