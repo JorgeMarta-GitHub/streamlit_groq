@@ -1,0 +1,290 @@
+MIL-STD-105E
+
+SAMPLING PROCEDURES AND TABLES
+FOR INSPECTION BY ATTRIBUTES
+1. SCOPE
+1.1 Purpose. This publication establishes lot or batch sampling plans and procedures for
+inspection by attributes. This publication shall not be interpreted to supercede or conflict
+with any contractual requirements. The words "accept", "acceptance", "acceptable", etc,
+refer only to the contractor's use of the sampling plans contained in this standard and do not
+imply an agreement by the Government to accept any product. Determination of
+acceptability by the Government shall be as described in contractual documents. The
+sampling plans described in this standard are applicable to AQL's of .01 percent or higher
+and are therefore not suitable for applications where quality levels in the defective parts per
+million range can be realized.
+1.2 Application. Sampling plans designated in this publication are applicable, but not limited,
+to inspection of the following:
+a. End items.
+b. Components and raw materials.
+c. Operations or services.
+d. Materials in process.
+e. Supplies in storage.
+f. Maintenance operations.
+g. Data or records.
+h. Administrative procedures.
+These plans are intended primarily to be used for a continuing series of lots or batches. The
+plans may also be used for the inspection of isolated lots or batches, but, in this latter case,
+the user is cautioned to consult the operating characteristic curves to find a plan which will
+yield the desired protection (See 4.11).
+2. REFERENCED DOCUMENTS
+2.1 Not applicable.
+3. DEFINITIONS
+3.1 Acceptable Quality Level (AQL). When a continuous series of lots is considered, the AQL
+is the quality level which, for the purposes of sampling inspection, is the limit of a
+satisfactory process average (See 3.19).
+NOTE: A sampling plan and an AQL are chosen in accordance with the risk assumed. Use
+of a value of AQL for a certain defect or group of defects indicates that the sampling plan
+will accept the great majority of the lots or batches provided the process average level of
+percent defective (or defects per hundred units) in these lots or batches be no greater than
+the designated value of AQL. Thus, the AQL is a designated value of percent defective (or
+defects per hundred units) for which lots will be accepted most of the time by the sampling
+procedure being used. The sampling plans provided herein are so arranged that the
+probability of acceptance at the designated AQL value depend upon the sample size, being
+generally higher for large samples than for small ones, for a given AQL. The AQL alone
+does not identify the chances of accepting or rejecting individual lots or batches but more
+directly relates to what might be expected from a series of lots or batches, provided the steps
+indicated in this publication are taken. It is necessary to refer to the operating characteristic
+curve of the plan to determine the relative risks.
+3.2 Average Outgoing Quality (AOQ). For a particular process average, the AOQ is the
+average quality of outgoing product including all accepted lots or batches, plus all rejected
+lots or batches after the rejected lots or batches have been effectively 100 percent inspected
+and all defectives replaced by non-defectives.
+3.3 Average Outgoing Quality Limit (AOQL). The AOQL is the maximum AOQ for a given
+acceptance sampling plan. Factors for computing AOQL values are given in Table V-A for
+each of the single sampling plans for normal inspection and in Table V-B for each of the
+single sampling plans for tightened inspection.
+3.4 Classification of Defects. A classification of defects is the enumeration of possible defects
+of the unit of product classified according to their seriousness.
+3.5 Critical Defect. A critical defect is a defect that judgement and experience indicate would
+result in hazardous or unsafe conditions for individuals using, maintaining, or depending
+upon the product, or a defect that judgement and experience indicate is likely to prevent
+performance of the tactical function of a major end item such as a ship, aircraft, tank,
+missile, or space vehicle.
+3.6 Critical Defective. A critical defective is a unit of product, which contains one or more
+critical defects and may also contain major and/or minor defects.
+3.7 Defect. A defect is any nonconformance of the unit of product with specified requirements.
+3.8 Defective. A defective is a unit of product which contains one or more defects.
+3.9 Defects per Hundred Units. The number of defects per hundred units of any given quantity
+of units of product is one hundred times the number of defects contained therein (one or
+more defects being possible in any unit of product) divided by the total number of units of
+product, i.e.:
+Defects per Number of defects x 100
+hundred units = Number of units inspected
+3.10. Inspection. Inspection is the process of measuring, examining, testing, or otherwise
+comparing the unit of product with the requirements.
+3.11. Inspection by Attributes. Inspection by attributes is inspection whereby either the unit of
+product is classified simply as defective or non-defective, or the number of defects in the
+unit of product is counted, with the respect to a given requirement or set of requirements.
+3.12. Lot or Batch. The term lot or batch shall mean 'inspection lot' or "inspection batch", i.e., a
+collection of units of product from which a sample is to be drawn and inspected and may
+differ from a collection of units designated as a lot or batch for other purposes (e.g.,
+production, shipment, etc.).
+3.13. Lot or Batch Size. The lot or batch size is the number of units of product in a lot or batch.
+3.14. Major Defect. A major defect is a defect, other than critical, that is likely to result in a
+failure, or to reduce materially the usability of the unit of product for its intended purpose.
+3.15. Major Defective. A major defective is a unit of product, which contains one or more
+major defects, and may also contain minor defects but contains no critical defect.
+3.16. Minor Defect. A minor defect is a defect that is not likely to reduced materially the
+usability of the unit of product for its intended purpose, or is a departure from established
+standards having little bearing on the effective use or operation of the unit.
+3.17. Minor Defective. A minor defective is a unit of product, which contains one or more
+minor defects but contains no critical or major defect.
+3.18 Percent Defective. The percent defective of any given quantity of units of product is one
+hundred times the number of defective units of product contained therein divided by the
+total number of units of product, i.e.:
+Number of defectives x 100 Percent Defective = Number of units inspected
+3.19 Process Average. The process average is the average percent defective or average number
+of defects per hundred units (whichever is applicable) of product submitted by the supplier
+for original inspection. Original inspection is the first inspection of a particular quantity of
+product as distinguished from the inspection of product which has been resubmitted after
+prior rejection.
+3.20 Sample. A sample consists of one or more units of product drawn from a lot or batch, the
+units of the sample being selected at random without regard to their quality. The number
+of units of product in the sample is the sample size.
+3.21 Sample Size Code Letter. The sample size code letter is a devise used along with the AQL
+for locating a sampling plan on a table of sampling plans.
+3.22 Sampling Plan. A sampling plan indicates the number of units of product from each lot or
+batch which are to be inspected (sample size or series of sample sizes) and the criteria for
+determining the acceptability of the lot or batch (acceptance and rejection numbers).
+3.23 Unit of Product. The unit of product is the thing inspected in order to determine its
+classification as defective or non-defective or to count the number of defects. It may be a
+single article, a pair, a set, a length, an area, and operation, a volume, a component of an
+end product, or the end product itself. The unit of product may or may not be the same as
+the unit of purchase, supply, production, or shipment.
+4. GENERAL REQUIREMENTS
+4.1 Written Procedures. Written procedures are ordinarily developed and made available for the
+Government representative's review, upon request. When the written procedures indicate
+use of this standard, they shall comply with the requirements of this standard and reference
+appropriate parts as necessary.
+4.2 Nonconformance. The extent of nonconformance of product shall be expressed either in
+terms of percent defective or in terms of defects per hundred units.
+4.3 Formation and Identification of Lots or Batches. The product shall be assembled into
+identifiable lots, sublots, batches, or in such other manner as may be prescribed. Each lot or
+batch shall, as far as is practicable, consist of units of product of a single type, grade, class,
+size, and composition, manufactured under essentially the same conditions, and at
+essentially the same time. The lots or batches shall be identified by the contractor and shall
+be kept intact in adequate and suitable storage space.
+4.4 AQL.
+4.4.1 AQL Use. The AQL, together with the Sample Size Code Letter, is used for indexing
+the sampling plans provided herein.
+4.4.2 Limitation. The selection or use of an AQL shall not imply that the contractor has the
+right to supply an defective unit of product.
+4.4.3 Choosing AQL's. Different AQLs may be chosen for groups of defects considered
+collectively, or for individual defects. An AQL for a group of defects may be chose in
+addition to AQLs for individual defects, or subgroups, within that group. AQL values of
+10.0 or less may be expressed either in percent defective or in defects per hundred units;
+those over 10.0 shall be expressed in defects per hundred units only.
+4.5 Sampling.
+4.5.1 Representative (Stratified) Sampling. When appropriate, the number of units in the
+sample shall be selected in proportion to the size of sublots or sub-batches, or parts of the
+lot or batch, identified by some rational criterion. When representative sampling is used,
+the units from each sublot, sub-batch or part of the lot or batch shall be selected at
+random.
+4.5.2 Time of Sampling. A sample may be drawn after all units comprising the lot or batch
+have been assembled, or sample units may be drawn during assembly of the lot or batch,
+in which case the size of the lot or batch will be determined before any sample units are
+drawn. If the sample units are drawn during assembly of the lot or batch, and if the
+rejection number is reached before the lot is completed, that portion of the lot already
+completed shall be rejected. The cause of the defective product shall be determined and
+corrective action taken, after which a new lot or batch shall be begun.
+4.5.3 Double or Multiple Sampling. When double or multiple sampling is to be used, each
+sample shall be selected over the entire lot or batch.
+4.6 Inspection Procedures. Normal inspection will be used at the start of inspection. Normal,
+tightened or reduced inspection shall continue unchanged for each class of defects or
+defectives on successive lots or batches except where the switching procedures given below
+require change. The switching procedures shall be applied to each class of defects or
+defectives independently.
+4.7 Switching Procedures.
+4.7.1 Normal to Tightened. When normal inspection is in effect, tightened inspection shall be
+instituted when 2 out of 2, 3, 4, or 5 consecutive lots or batches have been rejected on
+original inspection (i.e., ignoring resubmitted lots or batches for this procedure).
+4.7.2 Tightened to Normal. When tightened inspection is in effect, normal inspection shall be
+instituted when 5 consecutive lots or batches have been considered acceptable on original
+inspection.
+4.7.3 Normal to Reduced. When normal inspection is in effect, reduced inspection shall be
+instituted provided that all of the following conditions are satisfied:
+a. The preceding 10 lots or batches (or more, as indicated by the note to Table VIII)
+have been on normal inspection and all have been accepted on original inspection;
+and
+b. The total number of defectives (or defects) in the samples from the preceding 10 lots
+or batches (or such other number as was used for condition "a" above) is equal to or
+less than the applicable number given in Table VIII. If double or multiple sampling
+is in use, all samples inspected should be included, not "first" samples only; and
+c. Production is at a steady rate; and
+d. Reduced inspection is considered desirable.
+4.7.4 Reduced to Normal. When reduced inspection is in effect, normal inspection shall be
+instituted if any of the following occur on original inspection:
+a. A lot or batch is rejected; or
+b. A lot or batch is considered acceptable under the procedures of 4.10.1.4, or
+c. Production becomes irregular or delayed; or
+d. Other conditions warrant that normal inspection shall be instituted.
+4.8 Discontinuation of Inspection. If the cumulative number of lots not accepted in a sequence
+of consecutive lots on original tightened inspection reaches five, the acceptance procedures
+of this standard shall be discontinued. Inspection under the provisions of this standard shall
+not be resumed until corrective action has been taken. Tightened inspection shall then be
+used as if 4.7.1 had been invoked.
+4.9 Sampling Plans.
+4.9.1 Inspection Level. The inspection level determines the relationship between the lot or
+batch size and the sample size. The inspection level to be used for any particular
+requirement will be as prescribed by the contractor's written procedures. Three
+inspection levels: I, II, and III, are given in Table I for general use (see 4.1). Normally,
+Inspection Level II is used. However, Inspection Level I may be used when less
+discrimination is needed, or Level III may be used for greater discrimination. Four
+additional special levels: S-1, S-2, S-3, and S-4, are given in the same table and may be
+used where relatively small sample sizes are necessary and large sampling risks can or
+must be tolerated.
+NOTE: In the selection of inspection levels S-1 to S-4, care must be exercised to avoid
+AQLs inconsistent with these inspection levels. In other words, the purpose of the
+special inspection levels is to keep samples small when necessary. For instance, the code
+letters under S-1 go no further than D, equivalent to a single sample of size 8, but it is of
+no use to choose S-1 if the AQL is 0.10 percent for which the minimum sample is 125.
+4.9.2 Code Letters. Sample sizes are designated by code letters. Table I shall be used to find
+the applicable code letter for the particular lot or batch size and the prescribed inspection
+level.
+4.9.3 Obtaining Sample Plan. The AQL and the code letter shall be used to obtain the
+sampling plan from Tables II, III, or IV. When no sampling plan is available for a given
+combination of AQL and code letter, the tables direct the user to a different letter. The
+sample size to be used is given by the new code letter, not by the original letter. If this
+procedure leads to different sample sizes for different classes of defects, the code letter
+corresponding to the largest sample size derived may be used for all classes of defects.
+As an alternative to a single sampling plan with an acceptance number of 9, the plan with
+an acceptance number of 1, with its correspondingly larger sample size for a designated
+AQL (where available), may be used.
+4.9.4 Types of Sampling Plans. Three types of sampling plans: Single, Double, and Multiple,
+are given in Tables II, III, and IV, respectively. When several types of plans are
+available for a given AQL and code letter, any one may be used. A decision as to type of
+plan, either single, double, or multiple, when available for a given AQL and code letter,
+will usually be based upon the comparison between the administrative difficulty and the
+average sample sizes of the available plans. The average sample size of multip0le plans
+is less than for double (except in the case corresponding to a single acceptance number 1)
+and both of these are always less than a single sample size (see Table IX). Usually the
+administrative difficulty for single sampling and the cost per unit of the sample are less
+than for double or multiple.
+4.10 Determination of Acceptability
+4.10.1 Percent Defective Inspection. To determine acceptability of a lot or batch under percent
+defective inspection, the applicable sampling plan shall be used in accordance with
+4.10.1.1, 4.10.1.2, 4.10.1.3, and 4.10.1.4.
+4.10.1.1 Single Sampling Plan. The number of sample units inspected shall be equal to the
+sample size given by the plan. If the number of defectives found in the sample is
+equal to or less than acceptance number, the lot or batch shall be considered
+acceptable. If the number of defectives is equal to or greater than the rejection
+number, the lot or batch shall be rejected.
+4.10.1.2 Double Sampling Plan. A number of sample units equal to the first sample size given
+by the plan shall be inspected. If the number of defectives found in the first sample is
+equal to or less than the first acceptance number, the lot or batch shall be considered
+acceptable. If the number of defectives found in the first sample is equal to or greater
+than the first rejection number, the lot or batch shall be rejected. If the number of
+defectives found in the first sample is between the first acceptance and rejection
+numbers, a second sample of the same size shall be inspected. The number of
+defectives found in the first and second samples shall be accumulated. If the
+cumulative number of defectives is equal to or less than the second acceptance
+number, the lot or batch shall be considered acceptable. If the cumulative number of
+defectives is equal to or greater than the second rejection number, the lot or batch
+shall be rejected.
+4.10.1.3 Multiple Sample Plan. Under multiple sampling, the procedure shall be similar to
+that specified in 4.10.1.2, except that the number of successive samples required to
+reach a decision may be as many as seven.
+4.10.1.4 Special Procedure for Reduced Inspection. Under reduced inspection, the sampling
+procedure may terminate without either acceptance or rejection criteria having been
+met. In these circumstances, the lot or batch will be considered acceptable, but
+normal inspection will be reinstated starting with the next lot or batch (see 4.7.4.b).
+4.10.2 Defects per Hundred Units Inspection. To determine the acceptability of a lot or batch
+under defects per hundred units inspection, the procedure specified for percent defective
+inspection above shall be used, except that the word "defects" shall be substituted for
+"defectives".
+4.11 Limiting Quality Protection. The sample plans and associated procedures given in this
+publication were designed for use where the units of product are produced in a
+continuing series of lots or batches over a period of time. However, if the lot or batch is
+of an isolated nature, it is desirable to limit the selection of sampling plans to those,
+associated with a designated AQL value, that provide not less than a specified limiting
+quality protection. Sampling plans for this purpose can be selected by choosing a
+Limiting Quality (LQ) and a consumer's risk to be associated with it. Tables VI and VII
+give values of LQ for the commonly used consumer's risks of 10 percent and 5 percent
+respectively. If a different value of consumer's risks is required, the O.C. curves and
+their tabulated values may be used. The concept of LQ may also be useful in specifying
+the AQL and Inspection Levels for a series off lots or batches, thus fixing minimum
+sample size where there is some reason for avoiding (with more than a given consumer's
+risk) more than a limiting proportion of defectives (or defects) in any single lot or batch.
+4.12 Curves
+4.12.1 Operating Characteristic Curves. The operating characteristic curves for normal
+inspection, shown in Table X, indicate the percentage of lots or batches which may be
+expected to be accepted under the various sampling plans for a given process quality.
+The curves shown are for single sampling; curves for double and multiple sampling are
+matched as closely as practicable. The O.C. curves shown for AQLs greater than 10.0
+are based on the Poisson distribution and are applicable for defects per hundred units
+inspection; those for AQLs of 10.0 or less and sample sizes of 80 or less are based on the
+binomial distribution and are applicable for percent defective inspection; those for AQLs
+of 10.0 or less and sample sizes larger than 80 are based on the Poisson distribution and
+are applicable either for defects per hundred units of inspection, or for percent defective
+inspection (the Poisson distribution being an adequate approximation to the binomial
+distribution under these conditions). Tabulated values, corresponding to selected values
+or probabilities of acceptance (Pa, in percent) are given for each of the curves show, and,
+in addition, for tightened inspection, and for defects per hundred units for AQLs of 10.0
+or less and sample sizes of 80 or less.
+4.12.2 Average Sample Size Curves. Average sample size curves for double and multiple
+samples are in Table IX. These show the average sample sizes, which may be expected
+to occur under the various sampling plans for given levels of process quality. The curves
+assume no curtailment of inspection and are approximate to the extend that they are
+based upon the Poisson distribution, and that the sample sizes for double and multiple
+sampling are assumed to be 0.631n and 0.25n respectively, where n is the equivalent
+sample size.
