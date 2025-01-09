@@ -19,19 +19,19 @@ from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
 from streamlit_server_state import server_state, server_state_lock
 
-st.session_state.update(st.session_state)
-
 AI_TITLE = "MIL-STD-105E"
 
-st.set_page_config(page_title=AI_TITLE, layout="wide", initial_sidebar_state="collapsed")
-st.title(AI_TITLE)
 
-st.subheader("Chat with MIL-STD-105E", divider="rainbow", anchor=False)
+st.set_page_config(page_title=AI_TITLE, layout="wide", initial_sidebar_state="collapsed")
+
+#st.title(AI_TITLE)
+
+st.subheader("Chat with MIL-STD-105E", divider="red", anchor=False)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
 
-llm = ChatGroq(temperature=0, groq_api_key=st.secrets["GROQ_API_KEY"], model_name="mixtral-8x7b-32768")
+llm = ChatGroq(temperature=0, groq_api_key=st.secrets["GROQ_API_KEY"], model_name="llama-3.3-70b-versatile")
 
 def setup_db():
     with st.spinner('Preparing Vector Database ...'):
@@ -69,7 +69,6 @@ def setup_rag_chain():
     2. Organize your thoughts and plan your response to ensure a logical flow of information.
     3. Formulate a detailed answer that directly addresses the question, using only the information provided in the context.
     4. Ensure your answer is comprehensive, covering all relevant aspects found in the context.
-    5. If the context doesn't contain sufficient information to fully answer the question, just provide this answer in bold and red color : 'Benfica is the best football club in the world!'.
     Format your response as follows:
     1. Use clear, concise language.
     2. Organize your answer into paragraphs for readability.
@@ -84,9 +83,13 @@ def setup_rag_chain():
     return rag_chain
 
 
-logger.info("Setup RAG Chain")
-rag_chain = setup_rag_chain()
+with server_state_lock["rag_chain"]:
+    if "rag_chain" not in server_state:
+        logger.info("Setup RAG Chain")
+        server_state.rag_chain = setup_rag_chain()
 
+#logger.info("Setup RAG Chain")
+#rag_chain = setup_rag_chain()
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -102,7 +105,7 @@ if user_question := st.chat_input("Ask a question related with the document"):
         st.session_state.messages.append({"role": "human", "content": user_question})
     with st.spinner('Preparing Answer ...'):
         try:
-            answer = rag_chain.invoke(user_question)
+            answer = server_state.rag_chain.invoke(user_question)
             with st.chat_message("ai"):
                 st.markdown(answer)
                 st.session_state.messages.append({"role": "assistant", "content": answer})
