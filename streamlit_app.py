@@ -33,7 +33,9 @@ llm = ChatGroq(temperature=0, groq_api_key=st.secrets["GROQ_API_KEY"], model_nam
 
 def setup_db():
     with st.spinner('Preparing Vector Database ...'):
-        filename = Path(__file__).parent / './data/mil-std-105e.txt'
+        filename = Path(__file__).parent / "./data/MIL-STD-105E.TXT"
+        print(filename)
+        print(os.listdir(Path(__file__).parent / "./data"))
         loader = TextLoader(filename)
         documents = loader.load()
 
