@@ -6,25 +6,22 @@ from typing import Generator
 from groq import Groq
 from langchain_groq import ChatGroq
 from langchain_community.document_loaders import TextLoader
-from langchain_ollama import OllamaEmbeddings
-from langchain_ollama import ChatOllama
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
-from langchain_nomic import NomicEmbeddings
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
 
-AI_TITLE = "STREAMLIT GROQ AI: MIL-STD-105E"
+AI_TITLE = "MIL-STD-105E"
 
 st.set_page_config(page_title=AI_TITLE, layout="wide", initial_sidebar_state="collapsed")
 st.title(AI_TITLE)
 
-st.subheader("Streamlit App to chat with MIL-STD-105E", divider="rainbow", anchor=False)
+st.subheader("Chat with MIL-STD-105E", divider="rainbow", anchor=False)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger(__name__)
@@ -44,7 +41,8 @@ def setup_db():
         chunks_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
         chunks = chunks_splitter.split_documents(documents)
 
-        db = Chroma.from_documents(chunks, embeddings, persist_directory='./db')
+        #db = Chroma.from_documents(chunks, embeddings, persist_directory='./db')
+        db = Chroma.from_documents(chunks, embeddings)
         return db
 
 if 'db' not in st.session_state:
