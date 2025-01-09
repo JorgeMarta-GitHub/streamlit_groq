@@ -14,7 +14,9 @@ from langchain.schema.output_parser import StrOutputParser
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-
+import faiss
+from langchain_community.docstore.in_memory import InMemoryDocstore
+from langchain_community.vectorstores import FAISS
 
 st.session_state.update(st.session_state)
 
@@ -44,7 +46,8 @@ def setup_db():
         chunks = chunks_splitter.split_documents(documents)
 
         #db = Chroma.from_documents(chunks, embeddings, persist_directory='./db')
-        db = Chroma.from_documents(chunks, embeddings)
+        #db = Chroma.from_documents(chunks, embeddings)
+        db = FAISS.from_documents(documents=chunks, embedding=embeddings, docstore=InMemoryDocstore())
         return db
 
 if 'db' not in st.session_state:
