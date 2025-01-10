@@ -18,6 +18,8 @@ import faiss
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
 from streamlit_server_state import server_state, server_state_lock
+from gtts import gTTS
+from io import BytesIO
 
 AI_TITLE = "MIL-STD-105E"
 
@@ -110,6 +112,11 @@ if user_question := st.chat_input("Ask a question related with the document"):
                 st.markdown(answer)
                 st.session_state.messages.append({"role": "assistant", "content": answer})
                 logger.info("Answer generated")
+                tts = gTTS(answer)
+                audio_stream = BytesIO()
+                logger.info("Audio generated")
+                tts.write_to_fp(audio_stream)
+                st.audio(audio_stream)
         except Exception as e:
             st.error(e)
             logger.error(f"Error processing {e}")
